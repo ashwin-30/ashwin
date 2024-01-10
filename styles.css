@@ -1,3 +1,14 @@
+body {
+  background-color: #393E46;
+  color: #EEEEEE;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 .container {
   width: 70%;
   margin: auto;
@@ -7,47 +18,68 @@
 .dice {
   text-align: center;
   display: inline-block;
-
-}
-
-body {
-  background-color: #393E46;
 }
 
 h1 {
-  margin: 30px;
+  margin: 20px 0;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 8rem;
+  font-size: 5rem;
   color: #4ECCA3;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
 }
 
 img {
-  width: 80%;
+  width: 100%;
+  max-width: 200px; /* Adjust max-width based on your design */
+  height: auto;
 }
 
 footer {
   margin-top: 5%;
-  color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
-
 }
 
-.btn
-{
+.btn {
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
   background-color: #393E46;
   border-radius: 10px;
   cursor: pointer;
+}
+
+/* Smaller screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  img {
+    max-width: 150px;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+  
+  body {
+    overflow: auto;
+  }
 }
